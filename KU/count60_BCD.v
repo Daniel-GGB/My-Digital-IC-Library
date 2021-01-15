@@ -6,7 +6,7 @@ output wire cout;
 
 reg [3:0] shi;
 reg [3:0] ge;
-parameter N=60;    //模为60
+parameter N=60;    //模为60，可将N修改为任意值，构成任意值的BCD码计数器
 
 always@(posedge clk) begin
 ge = ge + 1;
