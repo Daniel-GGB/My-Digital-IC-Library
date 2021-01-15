@@ -1,0 +1,43 @@
+D:/study/Verilog/MULTISIM/test01/count10_t.v {1 {vlog -work work -novopt -stats=none D:/study/Verilog/MULTISIM/test01/count10_t.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module count10_t
+
+Top level modules:
+	count10_t
+
+} {} {}} D:/study/Verilog/MULTISIM/test01/dff1.v {1 {vlog -work work -novopt -stats=none D:/study/Verilog/MULTISIM/test01/dff1.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module dff1
+
+Top level modules:
+	dff1
+
+} {} {}} D:/study/Verilog/MULTISIM/test01/count10.v {1 {vlog -work work -novopt -stats=none D:/study/Verilog/MULTISIM/test01/count10.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module count10
+
+Top level modules:
+	count10
+
+} {} {}} D:/study/Verilog/MULTISIM/test01/fulladder_t.v {1 {vlog -work work -novopt -stats=none D:/study/Verilog/MULTISIM/test01/fulladder_t.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module fulladder_t
+
+Top level modules:
+	fulladder_t
+
+} {} {}} D:/study/Verilog/MULTISIM/test01/fulladder.v {1 {vlog -work work -novopt -stats=none D:/study/Verilog/MULTISIM/test01/fulladder.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module fulladder
+
+Top level modules:
+	fulladder
+
+} {} {}} D:/study/Verilog/MULTISIM/test01/dff1_t.v {1 {vlog -work work -novopt -stats=none D:/study/Verilog/MULTISIM/test01/dff1_t.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module dff1_t
+
+Top level modules:
+	dff1_t
+
+} {} {}}

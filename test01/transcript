@@ -1,0 +1,482 @@
+# Reading D:/modeltech64_10.4/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# OpenFile D:/study/Verilog/MULTISIM/test01/test01.mpf
+# Loading project test01
+# ** Warning: Multiple occurences of ini variable VERILOG_DoubleClick are found, only first occurence will be considered.
+# ** Warning: Multiple occurences of ini variable VERILOG_CustomDoubleClick are found, only first occurence will be considered.
+# ** Warning: Multiple occurences of ini variable VERILOG_DoubleClick are found, only first occurence will be considered.
+# ** Warning: Multiple occurences of ini variable VERILOG_CustomDoubleClick are found, only first occurence will be considered.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count4.v was successful.
+# Compile of count4_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.count10_t
+# vsim -gui D:\study\Verilog\MULTISIM\test01\test01.mpf 
+# Start time: 21:04:05 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+# ** Warning: (vsim-3015) D:/study/Verilog/MULTISIM/test01/count10_t.v(7): [PCDPC] - Port size (3) does not match connection size (4) for port 'out'. The port definition is at: D:/study/Verilog/MULTISIM/test01/count10.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /count10_t/C1 File: D:/study/Verilog/MULTISIM/test01/count10.v
+run
+run
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# ** Warning: (vsim-3015) D:/study/Verilog/MULTISIM/test01/count10_t.v(7): [PCDPC] - Port size (3) does not match connection size (4) for port 'out'. The port definition is at: D:/study/Verilog/MULTISIM/test01/count10.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /count10_t/C1 File: D:/study/Verilog/MULTISIM/test01/count10.v
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+quit -sim
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.count10_t
+# vsim 
+# Start time: 21:05:39 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+run
+run
+run
+quit -sim
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.count10_t
+# vsim 
+# Start time: 21:07:30 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+run
+run
+run
+quit -sim
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.count10_t
+# vsim 
+# Start time: 21:08:19 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+run
+run
+run
+run
+quit -sim
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v failed with 1 errors.
+# Compile of count10_t.v was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.count10_t
+# vsim 
+# Start time: 21:16:05 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v failed with 2 errors.
+# Compile of count10_t.v was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.count10_t
+# vsim 
+# Start time: 21:22:12 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v failed with 1 errors.
+# Compile of count10_t.v was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v failed with 1 errors.
+# Compile of count10_t.v was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.count10_t
+# vsim 
+# Start time: 21:49:09 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v failed with 2 errors.
+# Compile of count10_t.v was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.count10_t
+# vsim 
+# Start time: 21:56:21 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v failed with 1 errors.
+# Compile of count10_t.v was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.count10_t
+# vsim 
+# Start time: 22:01:58 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v failed with 1 errors.
+# Compile of count10_t.v was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.count10_t
+# vsim 
+# Start time: 22:05:04 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint sim:/count10_t/*
+quit -sim
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.count10_t
+# vsim 
+# Start time: 22:06:10 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.count10_t
+# vsim 
+# Start time: 22:08:57 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of fulladder_t.v was successful.
+# Compile of fulladder.v was successful.
+# Compile of dff1.v was successful.
+# Compile of dff1_t.v was successful.
+# Compile of count10.v was successful.
+# Compile of count10_t.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim work.count10_t
+# vsim 
+# Start time: 22:13:58 on Jan 14,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.count10_t
+# Loading work.count10
+add wave -position insertpoint sim:/count10_t/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim
