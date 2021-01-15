@@ -4,7 +4,7 @@
  - 《Verilog HDL程序设计教程_135例》_王金明.pdf  =>  书中的案例值得多学习，反复练习验证，明白其中编程原理
 
 ## KU
-### [Verilog HDL](./KU)
+### [Verilog HDL](./KU/Verilog HDL)
  - 模为任意值的BCD码计数器  =>  count60_BCD.v
  - 带置0和置1位的D触发器  =>  dff1.v
  - 带参数的4位加法器  =>  fulladder4.v
