@@ -13,7 +13,7 @@
 
 
 ## KU_T
-### [Verilog HDL](KU/Verilog HDL)
+### [Verilog HDL](./KU/Verilog HDL)
  - 模为任意值的BCD码计数器的测试文件  =>  count60_BCD_t.v
  - 带置0和置1位的D触发器的测试文件  =>  dff1_t.v
  - 带参数的4位加法器的测试文件  =>  fulladder4_t.v
