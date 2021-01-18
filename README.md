@@ -18,7 +18,7 @@
  - 带置0和置1位的D触发器的测试文件  =>  dff1_t.v
  - 带参数的4位加法器的测试文件  =>  fulladder4_t.v
  - 任意位数二进制码转格雷码的测试文件  =>  Binary_Gray_t.v
- - 任意位数格雷码转二进制码  =>  Gray_Binary_t.v
+ - 任意位数格雷码转二进制码测试文件  =>  Gray_Binary_t.v
  
  
  
