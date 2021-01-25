@@ -175,10 +175,10 @@
     endmodule
 
 ## 4.RTL图
-[8路彩灯控制程序RTL图.png]!(../Picture/FSM/8路彩灯控制程序RTL图.png)
+![8路彩灯控制程序RTL图.png](../Picture/FSM/8路彩灯控制程序RTL图.png)
 
 ## 5.状态转换图
-[8路彩灯控制程序综合后的状态转换图.png]!(../Picture/FSM/8路彩灯控制程序综合后的状态转换图.png)
+![8路彩灯控制程序综合后的状态转换图.png](../Picture/FSM/8路彩灯控制程序综合后的状态转换图.png)
 
 
 
