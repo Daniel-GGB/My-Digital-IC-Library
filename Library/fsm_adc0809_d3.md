@@ -85,7 +85,7 @@ adc0809是采样频率为8位的、以逐次逼近原理进行模—数转换的
         oe <= 0; next_state <= S2; end 
     S2: begin ale <=0; start <= 0; lock <= 0; oe <= 0; 
         if(eoc == 1) next_state <= S3;    //转换结束
-    	else next_state <= S2; end         //转换未结束
+        else next_state <= S2; end         //转换未结束
     S3: begin ale <=0; start <= 0; lock <= 0;    //将数据传入寄存器
         oe <= 1; next_state <= S4; end 
     S4: begin ale <=0; start <= 0; lock <= 1;    //将数据锁存并输出 
