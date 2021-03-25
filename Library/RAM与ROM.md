@@ -1,31 +1,31 @@
-## RAM��ROM
+## RAM与ROM
 
-**���ߣ�����**
+**作者：郭琦**
 
 ----------------------------------
 
-## 1��RAM��������ʴ洢����
-����RAM��ֻ��һ���������ߡ���ַ���ߺͶ�д�����ߣ���˵����������Ҫ����ͬһ�鵥��RAM ʱ����Ҫͨ���ٲõ�·���жϡ�
+## 1、RAM（随机访问存储器）
+单口RAM：只有一套数据总线、地址总线和读写控制线，因此当多个外设需要访问同一块单口RAM 时，需要通过仲裁电路来判断。
 
-˫��RAM������������ȫ�����������ߡ���ַ�ߺͶ�д�����ߣ��Ӷ�ʵ���˴������ݵĸ��ٷ����Լ���ͬʱ��������ݽ�����
+双口RAM：具有两套完全独立的数据线、地址线和读写控制线，从而实现了大量数据的高速访问以及不同时钟域的数据交换。
 
-### 1.1 ����RAM
+### 1.1 单口RAM
 
-˵����
+说明：
 
-1. cs_nΪƬѡ�źţ�����Ч����cs_nΪ��ʱ���洢�����ڹ���״̬�����Զ���д������cs_nΪ��ʱ���洢�����ڽ�ֹ״̬��ǿ�����0����
+1. cs_n为片选信号，低有效，当cs_n为低时，存储器处于工作状态（可以读或写）；当cs_n为高时，存储器处于禁止状态（强制输出0）。
 
-2. we_nΪдʹ���źţ�����Ч����we_nΪ��ʱ���洢������д״̬����we_nΪ��ʱ���洢�����ڶ�״̬��
+2. we_n为写使能信号，低有效，当we_n为低时，存储器处于写状态，当we_n为高时，存储器处于读状态。
 
-3. ram������Ϊ8*8=64bit���ݡ�
+3. ram的容量为8*8=64bit数据。
 
-��ƴ��룺
+设计代码：
 
-    /**********����RAM***************
-    ����ߣ�xygq163
-    ˵����1��cs_nΪƬѡ�źţ�����Ч����cs_nΪ��ʱ���洢�����ڹ���״̬�����Զ���д��    ����cs_nΪ��ʱ���洢�����ڽ�ֹ״̬��ǿ�����0����
-          2��we_nΪдʹ���źţ�����Ч����we_nΪ��ʱ���洢������д״̬����we_nΪ��    ʱ���洢�����ڶ�״̬��
-          3��ram������Ϊ8*8=64bit���ݡ�
+    /**********单口RAM***************
+    设计者：xygq163
+    说明：1、cs_n为片选信号，低有效，当cs_n为低时，存储器处于工作状态（可以读或写）    ；当cs_n为高时，存储器处于禁止状态（强制输出0）。
+          2、we_n为写使能信号，低有效，当we_n为低时，存储器处于写状态，当we_n为高    时，存储器处于读状态。
+          3、ram的容量为8*8=64bit数据。
     *********************************/
     module ram_single #(parameter WIDTH=8,DEPTH=8)
     (clk,reset_n,cs_n,we_n,addr,data_in,data_out);
@@ -35,7 +35,7 @@
     input wire [WIDTH-1:0] data_in;
     output reg [WIDTH-1:0] data_out;
     
-    reg [WIDTH-1:0] ram [DEPTH-1:0];    //������һ���洢��
+    reg [WIDTH-1:0] ram [DEPTH-1:0];    //定义了一个存储器
     integer i;
     
     always@(posedge clk,negedge reset_n)
@@ -56,7 +56,7 @@
     
     endmodule
 
-���Դ��룺
+测试代码：
 
     `timescale 1ns/1ns
     module ram_single_t();
@@ -98,30 +98,30 @@
     
     endmodule
 
-Multisim���棺
+Multisim仿真：
 
-![ram_single���ܷ���.png](../Picture/)
+![ram_single功能仿真.png](../Picture/ram_single功能仿真.png)
 
-### 1.2 ˫��RAM
+### 1.2 双口RAM
 
-˵����
+说明：
 
-1. cs_nΪƬѡ�źţ�����Ч����cs_nΪ��ʱ���洢�����ڹ���״̬�����Զ���д������cs_nΪ��ʱ���洢�����ڽ�ֹ״̬��ǿ�����0����
+1. cs_n为片选信号，低有效，当cs_n为低时，存储器处于工作状态（可以读或写）；当cs_n为高时，存储器处于禁止状态（强制输出0）。
 
-2. we_nΪдʹ���źţ�����Ч����we_nΪ��ʱ���洢������д״̬����we_nΪ��ʱ���洢�����ڶ�״̬��
+2. we_n为写使能信号，低有效，当we_n为低时，存储器处于写状态，当we_n为高时，存储器处于读状态。
 
-3. ram������Ϊ8*8=64bit���ݡ�
+3. ram的容量为8*8=64bit数据。
 
-4. addr_r��ʾ����ַ����clk_2���ƣ�addr_w��ʾд��ַ����clk_1���ơ�
+4. addr_r表示读地址，受clk_2控制，addr_w表示写地址，受clk_1控制。
 
-��ƴ��룺
+设计代码：
 
-    /**********˫��RAM****************
-    ����ߣ�xygq163
-    ˵����1��cs_nΪƬѡ�źţ�����Ч����cs_nΪ��ʱ���洢�����ڹ���״̬�����Զ���д)����cs_nΪ��ʱ���洢�����ڽ�ֹ״̬��ǿ�����0����
-          2��we_nΪдʹ���źţ�����Ч����we_nΪ��ʱ���洢������д״̬����we_nΪ��ʱ���洢�����ڶ�״̬��
-          3��ram������Ϊ8*8=64bit���ݡ�
-          4��addr_r��ʾ����ַ����clk_2���ƣ�addr_w��ʾд��ַ����clk_1���ơ�
+    /**********双口RAM****************
+    设计者：xygq163
+    说明：1、cs_n为片选信号，低有效，当cs_n为低时，存储器处于工作状态（可以读或写)；当cs_n为高时，存储器处于禁止状态（强制输出0）。
+          2、we_n为写使能信号，低有效，当we_n为低时，存储器处于写状态，当we_n为高时，存储器处于读状态。
+          3、ram的容量为8*8=64bit数据。
+          4、addr_r表示读地址，受clk_2控制，addr_w表示写地址，受clk_1控制。
     *******************************/
     module ram_double #(parameter WIDTH=8,DEPTH=8,NUMBER=3)
     (clk_1,clk_2,reset_n,cs_n,we_n,addr_r,addr_w,data_in,data_out);
@@ -131,7 +131,7 @@ Multisim���棺
     input wire [WIDTH-1:0] data_in;
     output reg [WIDTH-1:0] data_out;
     
-    reg [WIDTH-1:0] ram [DEPTH-1:0];    //������һ���洢��
+    reg [WIDTH-1:0] ram [DEPTH-1:0];    //定义了一个存储器
     integer i,j;
     
     always@(posedge clk_1,negedge reset_n)
@@ -168,7 +168,7 @@ Multisim���棺
     
     endmodule
 
-���Դ��룺
+测试代码：
 
     `timescale 1ns/1ns
     module ram_double_t();
@@ -213,23 +213,23 @@ Multisim���棺
     
     endmodule
 
-Multisim���棺
+Multisim仿真：
 
-![ram_double���ܷ���.png](../Picture/)
+![ram_double功能仿真.png](../Picture/ram_double功能仿真.png)
 
-## 2��ROM��ֻ���洢����
+## 2、ROM（只读存储器）
 
-˵����
+说明：
 
-1. ��������߼���ƣ���������ʱд�����ݣ��Ժ�ֻ�ܶ�������д�룩��
-2. read=1ʱ�����ݣ�read=0ʱ�������̬������8'bz��ͬ��8'bzzzzzzzz��
+1. 采用组合逻辑设计，（在制造时写入内容，以后只能读，不能写入）。
+2. read=1时读数据，read=0时输出高阻态，其中8'bz等同于8'bzzzzzzzz。
 
-��ƴ��룺
+设计代码：
 
-    /***********ROM�����*********************
-    ����ߣ�xygq163
-    ˵����1����������߼���ƣ���������ʱд�����ݣ��Ժ�ֻ�ܶ�������д�룩��
-          2��read=1ʱ�����ݣ�read=0ʱ�������̬������8'bz��ͬ��8'bzzzzzzzz��
+    /***********ROM的设计*********************
+    设计者：xygq163
+    说明：1、采用组合逻辑设计，（在制造时写入内容，以后只能读，不能写入）。
+          2、read=1时读数据，read=0时输出高阻态，其中8'bz等同于8'bzzzzzzzz。
     **************************************/
     module rom #(parameter WIDTH=8,DEPTH=8,NUMBER=3)
     (read,addr,data_out);
@@ -238,7 +238,7 @@ Multisim���棺
     input wire [NUMBER-1:0] addr;
     output wire [WIDTH-1:0] data_out;
     
-    wire [WIDTH-1:0] rom [DEPTH-1:0];    //������һ���洢����wire���ͣ�
+    wire [WIDTH-1:0] rom [DEPTH-1:0];    //定义了一个存储器（wire类型）
     
     assign rom[0] = 1;
     assign rom[1] = 2;
@@ -253,7 +253,7 @@ Multisim���棺
     
     endmodule
 
-���Դ��룺
+测试代码：
 
     `timescale 1ns/1ns
     module rom_t();
@@ -286,11 +286,11 @@ Multisim���棺
     
     endmodule
 
-Multisim���棺
+Multisim仿真：
 
-![rom���ܷ���.png](../Picture/)
+![rom功能仿真.png](../Picture/rom功能仿真.png)
 
-**�ο����ϣ�**
-1. [RAM/ROM�洢�������](https://blog.csdn.net/Andy_ICer/article/details/105371780)
-2. [verilog case��if��������ȫ����������������](https://blog.csdn.net/qq_40696831/article/details/88855164)
+**参考资料：**
+1. [RAM/ROM存储器的设计](https://blog.csdn.net/Andy_ICer/article/details/105371780)
+2. [verilog case，if语句情况不全包含会生成锁存器](https://blog.csdn.net/qq_40696831/article/details/88855164)
 
