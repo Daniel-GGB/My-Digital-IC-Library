@@ -11,6 +11,8 @@
  - 带参数的4位加法器  =>  fulladder4.v
  - 任意位数二进制码转格雷码  =>  Binary_Gray.v
  - 任意位数格雷码转二进制码  =>  Gray_Binary.v
+ - 随机访问存储器  =>  ram_single.v 与 ram_double.v
+ - 只读存储器  =>  rom.v
 
 
 ## [KU_T](./KU_T)
@@ -20,8 +22,8 @@
  - 带参数的4位加法器的测试文件  =>  fulladder4_t.v
  - 任意位数二进制码转格雷码的测试文件  =>  Binary_Gray_t.v
  - 任意位数格雷码转二进制码测试文件  =>  Gray_Binary_t.v
- 
- 
+ - 随机访问存储器的测试文件  =>  ram_single_t.v 与 ram_double_t.v
+ - 只读存储器  =>  rom_t.v
  
  
  
