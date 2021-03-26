@@ -14,6 +14,7 @@
  - 随机访问存储器  =>  ram_single.v 与 ram_double.v
  - 只读存储器  =>  rom.v
  - 边沿检测模块（通用消抖模块）  =>  edge_detection.v
+ - 同步FIFO  =>  fifo_s.v
 
 
 ## [KU_T](./KU_T)
@@ -26,6 +27,7 @@
  - 随机访问存储器的测试文件  =>  ram_single_t.v 与 ram_double_t.v
  - 只读存储器  =>  rom_t.v
  - 边沿检测模块（通用消抖模块）的测试文件  =>  edge_detection_t.v
+ - 同步FIFO的测试文件  =>  fifo_s_t.v
  
  
  
