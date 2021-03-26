@@ -286,7 +286,7 @@ Multisim仿真：
     
     endmodule
 
-Multisim仿真：
+Modelsim仿真：
 
 ![rom功能仿真.png](../Picture/rom功能仿真.png)
 
