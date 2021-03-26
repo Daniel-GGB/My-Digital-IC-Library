@@ -1,56 +1,56 @@
 
-## Í¬²½FIFO
+## åŒæ­¥FIFO
 
-### 1¡¢Ïà¹Ø¸ÅÄî
+### 1ã€ç›¸å…³æ¦‚å¿µ
 
-fifoÊÇ first input first output µÄËõÐ´£¬¼´ÏÈ½øÏÈ³ö¶ÓÁÐ£¬fifoÒ»°ãÓÃ×÷²»Í¬Ê±ÖÓÓòµÄ»º³åÆ÷¡£fifo¸ù¾Ý¶ÁºÍÐ´µÄÊ±ÖÓÊÇ·ñÎªÍ¬Ò»Ê±ÖÓ¶ø·ÖÎªÍ¬²½fifoºÍÒì²½fifo¡£Òì²½fifoÏà±ÈÍ¬²½fifoÀ´Ëµ£¬Éè¼Æ¸ü¼Ó¸´ÔÓÒ»µã¡£
+fifoæ˜¯ first input first output çš„ç¼©å†™ï¼Œå³å…ˆè¿›å…ˆå‡ºé˜Ÿåˆ—ï¼Œfifoä¸€èˆ¬ç”¨ä½œä¸åŒæ—¶é’ŸåŸŸçš„ç¼“å†²å™¨ã€‚fifoæ ¹æ®è¯»å’Œå†™çš„æ—¶é’Ÿæ˜¯å¦ä¸ºåŒä¸€æ—¶é’Ÿè€Œåˆ†ä¸ºåŒæ­¥fifoå’Œå¼‚æ­¥fifoã€‚å¼‚æ­¥fifoç›¸æ¯”åŒæ­¥fifoæ¥è¯´ï¼Œè®¾è®¡æ›´åŠ å¤æ‚ä¸€ç‚¹ã€‚
 
-Éè¼ÆFIFOµÄÊ±ºòÒ»°ãÐèÒª¿¼ÂÇÁ½µã£º
+è®¾è®¡FIFOçš„æ—¶å€™ä¸€èˆ¬éœ€è¦è€ƒè™‘ä¸¤ç‚¹ï¼š
 
-**1. FIFOµÄ´óÐ¡**
+**1. FIFOçš„å¤§å°**
 
-FIFOµÄ´óÐ¡Ö¸µÄÊÇramµÄ´óÐ¡£¬Õâ¸ö¿ÉÒÔ¸ù¾ÝÉè¼ÆÐèÒªÀ´ÉèÖÃ¡£
+FIFOçš„å¤§å°æŒ‡çš„æ˜¯ramçš„å¤§å°ï¼Œè¿™ä¸ªå¯ä»¥æ ¹æ®è®¾è®¡éœ€è¦æ¥è®¾ç½®ã€‚
 
-**2. FIFO¿ÕÂú×´Ì¬µÄÅÐ¶Ï**
+**2. FIFOç©ºæ»¡çŠ¶æ€çš„åˆ¤æ–­**
 
-FIFO¿ÕÂú×´Ì¬µÄÅÐ¶ÏÍ¨³£ÓÐÁ½ÖÖ·½·¨¡£
+FIFOç©ºæ»¡çŠ¶æ€çš„åˆ¤æ–­é€šå¸¸æœ‰ä¸¤ç§æ–¹æ³•ã€‚
 
-a¡¢Òì²½FIFOÖÐµÄramÒ»°ãÊÇË«¶Ë¿Úram£¬ËùÒÔÓÐ¶ÀÁ¢µÄ¶ÁÐ´µØÖ·¡£Òò´Ë¿ÉÒÔÒ»ÖÖÊÇ¶ÁÖ¸Õë£¬Ò»ÖÖÊÇÐ´Ö¸Õë£¬¶ÁÖ¸ÕëÖ¸ÏòÏÂÒ»¸öÒª¶ÁµÄµØÖ·£¬Ð´Ö¸ÕëÖ¸ÏòÏÂÒ»¸öÒªÐ´ÈëÊý¾ÝµÄµØÖ·£¬×îºóÍ¨¹ý±È½Ï¶ÁÖ¸ÕëºÍÐ´Ö¸ÕëµÄ´óÐ¡À´È·¶¨¿ÕÂú×´Ì¬¡£
+aã€å¼‚æ­¥FIFOä¸­çš„ramä¸€èˆ¬æ˜¯åŒç«¯å£ramï¼Œæ‰€ä»¥æœ‰ç‹¬ç«‹çš„è¯»å†™åœ°å€ã€‚å› æ­¤å¯ä»¥ä¸€ç§æ˜¯è¯»æŒ‡é’ˆï¼Œä¸€ç§æ˜¯å†™æŒ‡é’ˆï¼Œè¯»æŒ‡é’ˆæŒ‡å‘ä¸‹ä¸€ä¸ªè¦è¯»çš„åœ°å€ï¼Œå†™æŒ‡é’ˆæŒ‡å‘ä¸‹ä¸€ä¸ªè¦å†™å…¥æ•°æ®çš„åœ°å€ï¼Œæœ€åŽé€šè¿‡æ¯”è¾ƒè¯»æŒ‡é’ˆå’Œå†™æŒ‡é’ˆçš„å¤§å°æ¥ç¡®å®šç©ºæ»¡çŠ¶æ€ã€‚
 
-b¡¢ÉèÖÃÒ»¸ö¼ÆÊýÆ÷£¬µ±Ð´Ê¹ÄÜÓÐÐ§µÄÊ±ºò¼ÆÊýÆ÷¼ÓÒ»£»µ±¶ÁÊ¹ÄÜÓÐÐ§µÄÊ±ºò£¬¼ÆÊýÆ÷¼õÒ»£¬½«¼ÆÊýÆ÷ÓëramµÄsize½øÐÐ±È½ÏÀ´ÅÐ¶ÏfifoµÄ¿ÕÂú×´Ì¬¡£ÕâÖÖ·½·¨Éè¼Æ±È½Ï¼òµ¥£¬µ«ÊÇÐèÒªµÄ¶îÍâµÄ¼ÆÊýÆ÷£¬¾Í»á²úÉú¶îÍâµÄ×ÊÔ´£¬¶øÇÒµ±fifo±È½Ï´óÊ±£¬»á½µµÍfifo×îÖÕ¿ÉÒÔ´ïµ½µÄËÙ¶È¡£
+bã€è®¾ç½®ä¸€ä¸ªè®¡æ•°å™¨ï¼Œå½“å†™ä½¿èƒ½æœ‰æ•ˆçš„æ—¶å€™è®¡æ•°å™¨åŠ ä¸€ï¼›å½“è¯»ä½¿èƒ½æœ‰æ•ˆçš„æ—¶å€™ï¼Œè®¡æ•°å™¨å‡ä¸€ï¼Œå°†è®¡æ•°å™¨ä¸Žramçš„sizeè¿›è¡Œæ¯”è¾ƒæ¥åˆ¤æ–­fifoçš„ç©ºæ»¡çŠ¶æ€ã€‚è¿™ç§æ–¹æ³•è®¾è®¡æ¯”è¾ƒç®€å•ï¼Œä½†æ˜¯éœ€è¦çš„é¢å¤–çš„è®¡æ•°å™¨ï¼Œå°±ä¼šäº§ç”Ÿé¢å¤–çš„èµ„æºï¼Œè€Œä¸”å½“fifoæ¯”è¾ƒå¤§æ—¶ï¼Œä¼šé™ä½Žfifoæœ€ç»ˆå¯ä»¥è¾¾åˆ°çš„é€Ÿåº¦ã€‚
 
-±¾ÏîÄ¿ÖÐµÄFIFOÎªÍ¬²½FIFO£¬²ÉÓÃb·½·¨ÅÐ¶Ï¿ÕÓëÂú
+æœ¬é¡¹ç›®ä¸­çš„FIFOä¸ºåŒæ­¥FIFOï¼Œé‡‡ç”¨bæ–¹æ³•åˆ¤æ–­ç©ºä¸Žæ»¡
 
-### 2¡¢Éè¼Æ´úÂë
+### 2ã€è®¾è®¡ä»£ç 
 
     /******************************************************
-    ²Î¿¼×Ô£ºhttps://blog.csdn.net/buzhiquxiang/article/details/103287220
-    Éè¼ÆÕß£º¹ùçù
-    fifoÀàÐÍ£ºÍ¬²½fifo
-    ÌØµã£º1¡¢¶ÁÊ±ÖÓÓëÐ´Ê±ÖÓÎªÍ¬Ò»Ê±ÖÓ£¬ÔÚÊ±ÖÓÉÏÉýÑØ²»Í¬Ê±·¢Éú¶ÁÐ´²Ù×÷£¬¶ÁÐ´Ë³ÐòÎª¡°ÏÈÐ´ºó¶Á¡±£»
-          2¡¢fifoÔÚ±»Ð´Âúºó¿ÉÒÔ¼ÌÐøÐ´Èë£¬´Ó¶ø¸²¸ÇÔ­ÓÐÊý¾Ý£¬ÔÚÐ´ÂúÊ±·¢³öÐ´Âú¾¯¸æ£»
-          3¡¢fifo¶ÁÈ¡Íê³Éºó¿É¼ÌÐø½øÐÐ¶Á²Ù×÷£¬ÔÚ¶ÁÈ¡Íê³ÉÊ±·¢³ö¶ÁÍê¾¯¸æ£¬¶ÁÈ¡ÖØÍ·¿ªÊ¼£»
-          4¡¢full=1±íÊ¾Ð´Âú£¬full=0±íÊ¾Ð´Èë£¬empty=1±íÊ¾¶ÁÈ¡£¬empty=0±íÊ¾¶ÁÍê£»
-    BUG£º1¡¢Êý¾Ý0£¬ÅÐ¶ÏÎª¿Õ£»£¨Î´ÐÞ¸´£©
+    å‚è€ƒè‡ªï¼šhttps://blog.csdn.net/buzhiquxiang/article/details/103287220
+    è®¾è®¡è€…ï¼šéƒ­ç¦
+    fifoç±»åž‹ï¼šåŒæ­¥fifo
+    ç‰¹ç‚¹ï¼š1ã€è¯»æ—¶é’Ÿä¸Žå†™æ—¶é’Ÿä¸ºåŒä¸€æ—¶é’Ÿï¼Œåœ¨æ—¶é’Ÿä¸Šå‡æ²¿ä¸åŒæ—¶å‘ç”Ÿè¯»å†™æ“ä½œï¼Œè¯»å†™é¡ºåºä¸ºâ€œå…ˆå†™åŽè¯»â€ï¼›
+          2ã€fifoåœ¨è¢«å†™æ»¡åŽå¯ä»¥ç»§ç»­å†™å…¥ï¼Œä»Žè€Œè¦†ç›–åŽŸæœ‰æ•°æ®ï¼Œåœ¨å†™æ»¡æ—¶å‘å‡ºå†™æ»¡è­¦å‘Šï¼›
+          3ã€fifoè¯»å–å®ŒæˆåŽå¯ç»§ç»­è¿›è¡Œè¯»æ“ä½œï¼Œåœ¨è¯»å–å®Œæˆæ—¶å‘å‡ºè¯»å®Œè­¦å‘Šï¼Œè¯»å–é‡å¤´å¼€å§‹ï¼›
+          4ã€full=1è¡¨ç¤ºå†™æ»¡ï¼Œfull=0è¡¨ç¤ºå†™å…¥ï¼Œempty=1è¡¨ç¤ºè¯»å–ï¼Œempty=0è¡¨ç¤ºè¯»å®Œï¼›
+    BUGï¼š1ã€æ•°æ®0ï¼Œåˆ¤æ–­ä¸ºç©ºï¼›ï¼ˆæœªä¿®å¤ï¼‰
     *******************************************************/
     
-    module fifo_s #(parameter WIDTH=8,DEPTH=8,ADDR=3)    //¿í¶ÈÎª8,Éî¶ÈÎª    2^7=128 
+    module fifo_s #(parameter WIDTH=8,DEPTH=8,ADDR=3)    //å®½åº¦ä¸º8,æ·±åº¦ä¸º    2^7=128 
     (clk,reset_n,wen,ren,data_in,full,empty,data_out);
     
     input wire clk,reset_n;
-    input wire wen,ren;                    //Ð´Ê¹ÄÜ£¬¶ÁÊ¹ÄÜ
+    input wire wen,ren;                    //å†™ä½¿èƒ½ï¼Œè¯»ä½¿èƒ½
     input wire [WIDTH-1:0] data_in;
-    output reg full,empty;                 //Âú¡¢¿Õ
+    output reg full,empty;                 //æ»¡ã€ç©º
     output reg [WIDTH-1:0] data_out; 
     
-    reg [WIDTH-1:0] memery [DEPTH-1:0];    //ÄÚ´æÈÝÁ¿Îª:8
-    reg [ADDR-1:0] waddr,raddr;            //Ð´µØÖ·Ö¸Õë£¬¶ÁµØÖ·Ö¸Õë
+    reg [WIDTH-1:0] memery [DEPTH-1:0];    //å†…å­˜å®¹é‡ä¸º:8
+    reg [ADDR-1:0] waddr,raddr;            //å†™åœ°å€æŒ‡é’ˆï¼Œè¯»åœ°å€æŒ‡é’ˆ
     
     always@(posedge clk,negedge reset_n) begin   
     if(reset_n == 0) waddr = 0;
     else if(wen == 1) begin
         if((data_in != 0)&&(full != 1)) begin
-            memery[waddr] = data_in;                  //Ð´¼Ä´æÆ÷
+            memery[waddr] = data_in;                  //å†™å¯„å­˜å™¨
     		waddr = waddr + 1;
     	end
         else waddr = waddr;
@@ -62,7 +62,7 @@ b¡¢ÉèÖÃÒ»¸ö¼ÆÊýÆ÷£¬µ±Ð´Ê¹ÄÜÓÐÐ§µÄÊ±ºò¼ÆÊýÆ÷¼ÓÒ»£»µ±¶ÁÊ¹ÄÜÓÐÐ§µÄÊ±ºò£¬¼ÆÊýÆ÷¼õÒ»£
     if(reset_n == 0) raddr = 0;
     else if(ren == 1) begin
         if((memery[raddr] != 0)&&(empty != 0)) begin
-          data_out = memery[raddr];                //¶Á¼Ä´æÆ÷
+          data_out = memery[raddr];                //è¯»å¯„å­˜å™¨
     		raddr = raddr + 1;
         end
         else raddr = raddr;
@@ -70,7 +70,7 @@ b¡¢ÉèÖÃÒ»¸ö¼ÆÊýÆ÷£¬µ±Ð´Ê¹ÄÜÓÐÐ§µÄÊ±ºò¼ÆÊýÆ÷¼ÓÒ»£»µ±¶ÁÊ¹ÄÜÓÐÐ§µÄÊ±ºò£¬¼ÆÊýÆ÷¼õÒ»£
     else raddr = raddr;
     end
     
-    always@(posedge clk,negedge reset_n) begin    //ÅÐ¶ÏÊÇ·ñÐ´Âú
+    always@(posedge clk,negedge reset_n) begin    //åˆ¤æ–­æ˜¯å¦å†™æ»¡
     if(reset_n == 0) full = 0;
     else if(waddr == DEPTH) begin
         full = 1;
@@ -79,7 +79,7 @@ b¡¢ÉèÖÃÒ»¸ö¼ÆÊýÆ÷£¬µ±Ð´Ê¹ÄÜÓÐÐ§µÄÊ±ºò¼ÆÊýÆ÷¼ÓÒ»£»µ±¶ÁÊ¹ÄÜÓÐÐ§µÄÊ±ºò£¬¼ÆÊýÆ÷¼õÒ»£
     else full = 0;
     end
     
-    always@(posedge clk,negedge reset_n) begin    //ÅÐ¶ÏÊÇ·ñ¶ÁÍê
+    always@(posedge clk,negedge reset_n) begin    //åˆ¤æ–­æ˜¯å¦è¯»å®Œ
     if(reset_n == 0) empty = 1;
     else if(raddr==DEPTH) begin
         empty = 0;
@@ -90,7 +90,7 @@ b¡¢ÉèÖÃÒ»¸ö¼ÆÊýÆ÷£¬µ±Ð´Ê¹ÄÜÓÐÐ§µÄÊ±ºò¼ÆÊýÆ÷¼ÓÒ»£»µ±¶ÁÊ¹ÄÜÓÐÐ§µÄÊ±ºò£¬¼ÆÊýÆ÷¼õÒ»£
     
     endmodule
 
-### 3¡¢²âÊÔ´úÂë
+### 3ã€æµ‹è¯•ä»£ç 
 
     `timescale 1ns/1ns
     module fifo_s_t();
@@ -146,15 +146,15 @@ b¡¢ÉèÖÃÒ»¸ö¼ÆÊýÆ÷£¬µ±Ð´Ê¹ÄÜÓÐÐ§µÄÊ±ºò¼ÆÊýÆ÷¼ÓÒ»£»µ±¶ÁÊ¹ÄÜÓÐÐ§µÄÊ±ºò£¬¼ÆÊýÆ÷¼õÒ»£
     
     endmodule
 
-### 4¡¢Modelsim·ÂÕæ
+### 4ã€Modelsimä»¿çœŸ
 
-![fifo_s_·ÂÕæ.png](../Picture/fifo_s_·ÂÕæ.png)
+![fifo_s_ä»¿çœŸ.png](../Picture/fifo_s_ä»¿çœŸ.png)
 
-### 5¡¢RTLÍ¼
+### 5ã€RTLå›¾
 
-![fifo_s_·ÂÕæ.png](../Picture/fifo_s_·ÂÕæ.png)
+![fifo_s_ç»¼åˆ.png](../Picture/fifo_s_ç»¼åˆ.png)
 
-²Î¿¼ÎÄÏ×£º
+å‚è€ƒæ–‡çŒ®ï¼š
 
-1. [Í¬²½FIFOÓëÒì²½FIFO](https://blog.csdn.net/buzhiquxiang/article/details/103287220)
+1. [åŒæ­¥FIFOä¸Žå¼‚æ­¥FIFO](https://blog.csdn.net/buzhiquxiang/article/details/103287220)
 
