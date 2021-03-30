@@ -29,5 +29,6 @@
  - 边沿检测模块（通用消抖模块）的测试文件  =>  edge_detection_t.v
  - 同步FIFO的测试文件  =>  fifo_s_t.v
  
- 
+ ## 学习网站推荐
+ 1. https://customizablecomputinglab.gitee.io/
  
