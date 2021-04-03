@@ -1,5 +1,9 @@
 # My-Digital-IC-Library
-我的数字IC仓库：Verilog HDL; System Vreilog; UVM; ModelSim; Quartus II;
+我的数字IC仓库：
+Verilog HDL; System Vreilog; 
+UVM;
+EDA_Linux;
+
 ## [Books](./Books)
  - 《Verilog HDL程序设计教程_135例》_王金明.pdf  =>  书中的案例值得多学习，反复练习验证，明白其中编程原理
  - 《Verilog编码规范》_亚芯微电子有限公司.pdf
