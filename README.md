@@ -39,3 +39,6 @@
 ## 其他推荐
  1. [gvim简明教程](https://www.jianshu.com/p/94ba2306f7c8)
  2. [Synopsys全套docker镜像使用指南](https://zhuanlan.zhihu.com/p/266225644)
+ 3. [VCS入门教程(一)](https://zhuanlan.zhihu.com/p/127335447)
+ 4. [【工利其器】必会工具之（一）Source Insight篇](https://www.cnblogs.com/andy-songwei/p/9965714.html)
+ 5. [3.Linux系统Makefile](https://www.bilibili.com/video/BV1dW411n7vk?from=search&seid=18160544971512013359)
