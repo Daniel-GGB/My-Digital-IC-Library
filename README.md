@@ -38,3 +38,4 @@
  
 ## 其他推荐
  1. [gvim简明教程](https://www.jianshu.com/p/94ba2306f7c8)
+ 2. [Synopsys全套docker镜像使用指南](https://zhuanlan.zhihu.com/p/266225644)
