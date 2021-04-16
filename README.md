@@ -42,3 +42,4 @@
  3. [VCS入门教程(一)](https://zhuanlan.zhihu.com/p/127335447)
  4. [【工利其器】必会工具之（一）Source Insight篇](https://www.cnblogs.com/andy-songwei/p/9965714.html)
  5. [3.Linux系统Makefile](https://www.bilibili.com/video/BV1dW411n7vk?from=search&seid=18160544971512013359)（资料推荐：[Makefile入门.zip](./Book/Makefile入门.zip)）
+ 6. [formality软件使用教程](https://blog.csdn.net/weixin_43755290/article/details/105097210?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-18.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-18.control)
