@@ -44,3 +44,4 @@
  5. [3.Linux系统Makefile](https://www.bilibili.com/video/BV1dW411n7vk?from=search&seid=18160544971512013359)（资料推荐：[Makefile入门.zip](./Book/Makefile入门.zip)）
  6. [formality软件使用教程](https://blog.csdn.net/weixin_43755290/article/details/105097210?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-18.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-18.control)
  7. [自动布局布线工具Astro教程(现在的ICC)](https://wenku.baidu.com/view/a2bb3b6bcc7931b764ce1539.html)
+ 8. [ASIC设计学习总结(包括：工具及书籍文档推荐 、软件环境搭建、RTL设计、验证、工艺库说明、形式验证、综合等共12部分）](http://www.360doc.com/content/20/1215/18/39626951_951692940.shtml)
