@@ -34,11 +34,11 @@
  - 随机访问存储器的测试文件  =>  ram_single_t.v 与 ram_double_t.v
  - 只读存储器  =>  rom_t.v
  - 边沿检测模块（通用消抖模块）的测试文件  =>  edge_detection_t.v
- - 同步FIFO的测试文件  =>  fifo_s_t.v
+ - 同步FIFO的测试文件  =>  fifo_s_t.vdizixiong
  
  ## 学习网站推荐
- 1. https://customizablecomputinglab.gitee.io/
- 2. http://viplab.fudan.edu.cn/vip/projects/gradproj/wiki
+ 1. 【西南交通大学-邸志雄】https://customizablecomputinglab.gitee.io/
+ 2. 【复旦大学-范益波】http://viplab.fudan.edu.cn/vip/projects/gradproj/wiki
  
 ## 其他推荐
  1. [gvim简明教程](https://www.jianshu.com/p/94ba2306f7c8)
