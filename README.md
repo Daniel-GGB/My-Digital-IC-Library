@@ -38,6 +38,7 @@
  
  ## 学习网站推荐
  1. https://customizablecomputinglab.gitee.io/
+ 2. http://viplab.fudan.edu.cn/vip/projects/gradproj/wiki
  
 ## 其他推荐
  1. [gvim简明教程](https://www.jianshu.com/p/94ba2306f7c8)
